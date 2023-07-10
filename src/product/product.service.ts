@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { BadRequestException, Injectable, InternalServerErrorException, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, isValidObjectId } from 'mongoose';
@@ -15,7 +16,7 @@ export class ProductService {
 
     try {
       await this.productModel.create(createProductDto);
-      return { message: 'Product created' };
+      return { message: 'Producto creado correctamente' };
     } catch (error) {
       throw new InternalServerErrorException(error.message);
     }
@@ -38,7 +39,7 @@ export class ProductService {
       }
 
       if (!product) {
-        throw new NotFoundException(`Product with id or name '${term}' not found`);
+        throw new NotFoundException(`No se encontro el producto`);
       }
 
       return product;
@@ -64,7 +65,8 @@ export class ProductService {
 
     try {
       await product.updateOne(updateProductDto);
-      return { messsage: `Product with term: ${term} updated` };
+      console.log('hasta qui');
+      return { message: `El producto ha sido actualizado correctamente` };
     } catch (error) {
       throw new InternalServerErrorException(error.message);
     }

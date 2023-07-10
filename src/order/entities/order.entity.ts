@@ -10,6 +10,9 @@ export class Order extends Document {
   user: Types.ObjectId;
 
   @Prop({ required: true })
+  direction: string;
+
+  @Prop({ required: true })
   subtotal: number;
 
   @Prop({ required: true, min: 0 })

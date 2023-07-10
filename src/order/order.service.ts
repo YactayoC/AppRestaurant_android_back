@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { CreateOrderDto } from './dto/create-order.dto';
 import { UpdateOrderDto } from './dto/update-order.dto';

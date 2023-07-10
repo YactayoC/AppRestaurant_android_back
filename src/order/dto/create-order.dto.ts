@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { IsIn, IsNumber, IsString } from 'class-validator';
 
 export class CreateOrderDto {
@@ -6,6 +7,9 @@ export class CreateOrderDto {
 
   @IsString()
   user: string;
+
+  @IsString()
+  direction: string;
 
   @IsNumber()
   subtotal: number;

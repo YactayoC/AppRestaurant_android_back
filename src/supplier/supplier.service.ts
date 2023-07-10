@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Injectable, InternalServerErrorException, NotFoundException } from '@nestjs/common';
 import { CreateSupplierDto } from './dto/create-supplier.dto';
 import { UpdateSupplierDto } from './dto/update-supplier.dto';
@@ -14,7 +15,7 @@ export class SupplierService {
 
     try {
       await this.supplierModel.create(createSupplierDto);
-      return { message: 'Supplier created' };
+      return { message: 'Proveedor creado correctamente' };
     } catch (error) {
       throw new InternalServerErrorException(error.message);
     }
@@ -32,7 +33,7 @@ export class SupplierService {
         throw new NotFoundException(`El proveedor no existe`);
       }
 
-      supplier = await this.supplierModel.findOne({ id });
+      supplier = await this.supplierModel.findOne({ _id: id });
       return supplier;
     } catch (error) {
       throw new InternalServerErrorException(error.message);
@@ -45,13 +46,21 @@ export class SupplierService {
 
     try {
       await supplier.updateOne(updateSupplierDto);
-      return { message: 'Supplier updated' };
+      return { message: 'Proveedor actualizado correctamente' };
     } catch (error) {
       throw new InternalServerErrorException(error.message);
     }
   }
 
-  remove(id: string) {
-    return `This action removes a #${id} supplier`;
+  async remove(id: string) {
+    const supplier = await this.findOne(id);
+    console.log(id);
+
+    if (!supplier) {
+      throw new NotFoundException(`El proveedor no existe`);
+    }
+
+    await supplier.deleteOne({ _id: id });
+    return { message: 'Se elimino el proveedor correctamente' };
   }
 }
