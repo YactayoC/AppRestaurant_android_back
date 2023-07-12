@@ -1,6 +1,8 @@
+/* eslint-disable prettier/prettier */
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, isValidObjectId } from 'mongoose';
+import * as bcrypt from 'bcrypt';
 
 import { UpdateUserDto } from './dto/update-user.dto';
 import { RegisterDto } from 'src/common/dto/register.dto';
@@ -93,9 +95,11 @@ export class UserService {
   }
 
   async update(term: string, updateUserDto: UpdateUserDto) {
+    const hassedPassword = await bcrypt.hash(updateUserDto.password, 10);
+
     try {
       const user = await this.findOne(term);
-      await user.updateOne(updateUserDto);
+      await user.updateOne({ ...updateUserDto, password: hassedPassword });
       return { messsage: 'Se actualizaron los datos correctamente' };
     } catch (error) {
       throw new InternalServerErrorException(error.message);

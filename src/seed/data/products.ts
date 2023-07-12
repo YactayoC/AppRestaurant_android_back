@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 interface Product {
   id?: string;
   name: string;
@@ -13,155 +14,179 @@ interface Product {
 
 export const products: Product[] = [
   {
-    name: 'filete de fescado',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 10.5,
-    category: 'Mariscos',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682358626/resturant/filete_de_pescado_new97c.jpg',
+    name: 'Pollo a la leña',
+    description: 'Papas crocantes | Ensalada | Cremas',
+    price: 59,
+    category: 'A la brasa',
+    image:
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185166/temporal/Pollo-Hawainano_La-Lena_fecl3u.jpg',
     inOffer: false,
     offerPrice: 0,
   },
   {
-    name: 'cojinova frita',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 12.0,
-    category: 'Mariscos',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682358755/resturant/cojinova_frita_srmbnq.jpg',
+    name: 'Pollo + 1/4 de Pollo',
+    description: 'Papas crocantes | Ensalada | Cremas',
+    price: 69,
+    category: 'A la brasa',
+    image:
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185201/temporal/Como-preparar-un-mostrito-peruano_m7lput.jpg',
     inOffer: false,
     offerPrice: 0,
   },
   {
-    name: 'chita frita',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 8.0,
-    category: 'Mariscos',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682358876/resturant/chita_frita_yiblep.jpg',
+    name: 'Pollo a la leña + Gaseosa 1.5Lt',
+    description: 'Papas crocantes | Ensalada | Cremas | Gaseosa 1.5LT',
+    price: 64.9,
+    category: 'A la brasa',
+    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185291/temporal/carta_pollo_50_iyqxut.png',
     inOffer: false,
     offerPrice: 0,
   },
   {
-    name: 'sudado de lenguado',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 7.0,
-    category: 'Mariscos',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682358875/resturant/sudado_lenguado_bmwe7j.jpg',
+    name: 'Pollo + 1/4 de Pollo + Gaseosa 1.5Lt',
+    description: 'Papas crocantes | Ensalada | Cremas | Gaseosa 1.5LT',
+    price: 77,
+    category: 'A la brasa',
+    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185291/temporal/carta_pollo_50_iyqxut.png',
     inOffer: false,
     offerPrice: 0,
   },
   {
-    name: 'sudaddo de chita',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 21.0,
-    category: 'Mariscos',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682358918/resturant/sudado_chita_fxmvif.jpg',
+    name: '2 Pollos a la leña',
+    description: '2 Papas crocantes | 2 Ensaladas | Cremas | 1/2 Pollo Solo | Gaseosa 3LT',
+    price: 148,
+    category: 'A la brasa',
+    image:
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185358/temporal/carta_polloymedio_72_yzlhru.png',
     inOffer: false,
     offerPrice: 0,
   },
   {
-    name: 'leche de tigre',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
+    name: 'Pollo + 1/4 de pollo solo',
+    description: 'Papas crocantes | Ensalada | Cremas | Gaseosa 1.5LT',
+    price: 74.9,
+    category: 'A la brasa',
+    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185291/temporal/carta_pollo_50_iyqxut.png',
+    inOffer: false,
+    offerPrice: 0,
+  },
+  {
+    name: '2 Pollos a la leña',
+    description: '2 Papas crocantes | 2 Ensaladas | Cremas | Gaseosa 2LT',
+    price: 123,
+    category: 'A la brasa',
+    image:
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185358/temporal/carta_polloymedio_72_yzlhru.png',
+    inOffer: false,
+    offerPrice: 0,
+  },
+  {
+    name: 'Pollo a la leña',
+    description: 'Papa familiar | Ensalada | Cremas | Gaseosa 1.5LT',
+    price: 66.9,
+    category: 'A la brasa',
+    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185291/temporal/carta_pollo_50_iyqxut.png',
+    inOffer: false,
+    offerPrice: 0,
+  },
+  {
+    name: 'Mostro familiar + Gaseosa 2LT',
+    description: 'Pollo a la leña | Papas crocante | Arroz chaufa | Ensalada | Cremas | Gaseosa 2LT',
+    price: 74,
+    category: 'A la brasa',
+    image:
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185201/temporal/Como-preparar-un-mostrito-peruano_m7lput.jpg',
+    inOffer: false,
+    offerPrice: 0,
+  },
+  {
+    name: 'Mostrito',
+    description: '1/4 Pollo a la leña | Papas crocante | Arroz chaufa | Ensalada | Cremas',
     price: 15,
-    category: 'Entradas',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682876279/resturant/leche_de_tigre_1_k4eeyw.jpg',
-    inOffer: false,
-    offerPrice: 0,
-  },
-  {
-    name: 'chorito a la chalaca',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 12.0,
-    category: 'Entradas',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682876282/resturant/chorito_chalaca_1_gzkcfl.jpg',
-    inOffer: false,
-    offerPrice: 0,
-  },
-  {
-    name: 'conchitas a la chalaca',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 8.0,
-    category: 'Entradas',
+    category: 'A la brasa',
     image:
-      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682876283/resturant/conchitas-a-la-chalaca_1_emjbii.jpg',
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185201/temporal/Como-preparar-un-mostrito-peruano_m7lput.jpg',
     inOffer: false,
     offerPrice: 0,
   },
   {
-    name: 'ensalada de palta',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 7.0,
-    category: 'Entradas',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682876290/resturant/ensalada_palta_1_yakyws.jpg',
-    inOffer: false,
-    offerPrice: 0,
-  },
-  {
-    name: 'papas a la huancaina',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 21.0,
-    category: 'Entradas',
+    name: 'Mostro',
+    description: '1/4 Pollo a la leña | Papas crocante | Arroz chaufa | Ensalada | Cremas',
+    price: 20,
+    category: 'A la brasa',
     image:
-      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682876292/resturant/papas-a-la-huancaina_1_wshztc.jpg',
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185201/temporal/Como-preparar-un-mostrito-peruano_m7lput.jpg',
     inOffer: false,
     offerPrice: 0,
   },
   {
-    name: 'chicharron de pescado',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 15,
-    category: 'Fuentes',
+    name: '1/2 Pollo a la leña',
+    description: '1/2 Pollo a la leña | Papas crocante | Ensalada | Cremas | Gaseosa 1.5LT',
+    price: 39.9,
+    category: 'A la brasa',
+    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185291/temporal/carta_pollo_50_iyqxut.png',
+    inOffer: false,
+    offerPrice: 0,
+  },
+  {
+    name: '3 Pollos a la leña',
+    description: '3 Papas crocante | 3 Ensaladas | Cremas | 2 Gaseosas 2LT',
+    price: 188,
+    category: 'A la brasa',
     image:
-      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682875893/resturant/p03-fuente-chicharron-pescado_1_cnjqm6.jpg',
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185358/temporal/carta_polloymedio_72_yzlhru.png',
     inOffer: false,
     offerPrice: 0,
   },
   {
-    name: 'chaufa de marisco',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 12.0,
-    category: 'Fuentes',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682875893/resturant/chaufademarisco_1_x6ste0.png',
+    name: 'Parrilla familiar',
+    description: 'Biffe | Chuleta | Pechuga | Anticucho | Mollejas | Papas | Ensaladas | Pepsi 2LT',
+    price: 75,
+    category: 'Parrillas',
+    image:
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185541/temporal/529b10b2dab3b695a7096b4ef2c39e4b__400x209_igitd3.webp',
     inOffer: false,
     offerPrice: 0,
   },
   {
-    name: 'ronda marina',
+    name: 'Extra Parrilla familiar',
     description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 8.0,
-    category: 'Fuentes',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682875894/resturant/rnodamanrina_1_nxiog6.jpg',
+      'Churrasco | Chuleta | Anticucho | Brocheta | Chorizo | Mollejas | 1/4 Pollo | Papas | Ensalada | Pepsi 2LT',
+    price: 79,
+    category: 'Parrillas',
+    image:
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185541/temporal/529b10b2dab3b695a7096b4ef2c39e4b__400x209_igitd3.webp',
     inOffer: false,
     offerPrice: 0,
   },
   {
-    name: 'combinado',
+    name: 'Mega Parrilla familiar',
     description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 7.0,
-    category: 'Fuentes',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682875894/resturant/combinado_1_vq0skm.jpg',
+      'Churrasco | Chuleta | 2 Anticuchos | 2 Brochetas | 2 Chorizos | Mollejas | 1/2 Pollo | Papas | Ensalada | Pepsi 2LT',
+    price: 112,
+    category: 'Parrillas',
+    image:
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185541/temporal/529b10b2dab3b695a7096b4ef2c39e4b__400x209_igitd3.webp',
     inOffer: false,
     offerPrice: 0,
   },
   {
-    name: 'jalea',
-    description:
-      'Every day is taco ipsum tuesday. A wonderful morning for breakfast tacos. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.',
-    price: 21.0,
-    category: 'Fuentes',
-    image: 'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1682875907/resturant/jalea_1_mo10wa.jpg',
+    name: 'Parrilla Para 3',
+    description: 'Churrasco | Anticucho | Mollejas | 1/4 Pollo | Papas | Ensalada familiar | Pepsi 2LT',
+    price: 60,
+    category: 'Parrillas',
+    image:
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185541/temporal/529b10b2dab3b695a7096b4ef2c39e4b__400x209_igitd3.webp',
+    inOffer: false,
+    offerPrice: 0,
+  },
+  {
+    name: 'Parrilla familiar a la piedra',
+    description: 'Biffe | Churrasco | 1/4 Pollo | Mollejas | Chorizo | Papas | Ensalada | Pepsi 2LT',
+    price: 71,
+    category: 'Parrillas',
+    image:
+      'https://res.cloudinary.com/sebas-2001-yac/image/upload/v1689185541/temporal/529b10b2dab3b695a7096b4ef2c39e4b__400x209_igitd3.webp',
     inOffer: false,
     offerPrice: 0,
   },
